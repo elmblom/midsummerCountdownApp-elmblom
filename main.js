@@ -1,29 +1,18 @@
-const midsummer = new Date("2025-06-22T00:00:00Z");
+const { app, BrowserWindow } = require('electron')
 
-const days = document.querySelector("#days");
-const hours = document.querySelector("#hours");
-const minutes = document.querySelector("#minutes");
-const seconds = document.querySelector("#seconds");
-const countdown = document.querySelector("#countdown");
-
-function countdownfunc() {
-    let now = new Date();
-
-    let timeDiff = midsummer - now;
-    let daysLeft = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
-    let hoursLeft = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    let minutesLeft = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
-    let secondsLeft = Math.floor((timeDiff % (1000 * 60)) / 1000);
-
-    days.innerHTML = daysLeft;
-    hours.innerHTML = hoursLeft;
-    minutes.innerHTML = minutesLeft;
-    seconds.innerHTML = secondsLeft;
-    if (timeDiff < 172800000 && timeDiff > 0) {
-        document.querySelector("#countdown").innerHTML = "Midsummer has arrived!";
-    }
+const createWindow = () => {
+    const win = new BrowserWindow({
+      width: 800,
+      height: 600
+    })
+  
+    win.loadFile('index.html')
 }
 
-setInterval(() => {
-    countdownfunc();
-}, 1000);
+app.whenReady().then(() => {
+  createWindow()
+})
+
+app.on('window-all-closed', () => {
+  if (process.platform !== 'darwin') app.quit()
+})
