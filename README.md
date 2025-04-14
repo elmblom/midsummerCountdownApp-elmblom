@@ -1,13 +1,14 @@
 # Electron App - Elmblom
 
 ## Description
-My first Electron app.
+An extremly usefull app for knowing when midsummer is.
+Built With electron <3
 
 ## Setup Instructions
 1. Clone the repository:
    ```bash
-   git clone "https://github.com/elmblom/electronapp-elmblom"
-   cd electronapp-elmblom
+   git clone "https://github.com/elmblom/midsummerCountdownApp-elmblom"
+   cd midsummerCountdownApp-elmblom
 2. Install dependencies:
    ```bash
    npm install
