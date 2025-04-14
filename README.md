@@ -1,8 +1,8 @@
-# Electron App - Elmblom
+# Midsummer Countdown App - Elmblom
 
 ## Description
-An extremly usefull app for knowing when midsummer is.
-Built With electron <3
+   An extremly usefull app for knowing when midsummer is.
+   Built With electron <3
 
 ## Setup Instructions
 1. Clone the repository:
