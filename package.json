@@ -4,7 +4,7 @@
   "description": "My first electron app",
   "main": "index.js",
   "scripts": {
-    "start" : "electron ."
+    "start": "electron ."
   },
   "repository": {
     "type": "git",
@@ -13,6 +13,7 @@
   "author": "elmblom",
   "license": "ISC",
   "dependencies": {
+    "astronomia": "^4.1.1",
     "electron": "^35.1.5"
   }
 }
