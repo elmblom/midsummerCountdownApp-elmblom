@@ -2,8 +2,8 @@ const { app, BrowserWindow } = require('electron')
 
 const createWindow = () => {
     const win = new BrowserWindow({
-      width: 800,
-      height: 600
+      width: 620,
+      height: 700
     })
   
     win.loadFile('index.html')
@@ -16,3 +16,7 @@ app.whenReady().then(() => {
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') app.quit()
 })
+
+app.on('browser-window-created', (event, window) => {
+  window.setMinimumSize(620, 700);
+});

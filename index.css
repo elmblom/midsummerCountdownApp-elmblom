@@ -1,0 +1,189 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: greenyellow;
+    color: #333;
+    text-align: center;
+    overflow: hidden;
+    padding: 0px;
+}
+@font-face {
+    font-family: "Bungee Spice";
+    src: url(./assets/fonts/Bungee_Spice/BungeeSpice-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Retro Leaves";
+    src: url(./assets/fonts/retro-leaves/Retro\ Leaves.ttf) format("truetype");
+}
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-family: "Bungee Spice", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#countdown {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-family: "Bungee Spice", sans-serif;
+}
+#countdown div {
+    display: inline-block;
+    margin: 0 10px;
+    font-family: "Retro Leaves", sans-serif;
+}
+#tree {
+    width: 500px;
+    height: 700px;
+    background-color: transparent;
+    position: absolute;
+    margin: auto;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    bottom: 0px;
+}
+#tree dialog {
+    position: absolute;
+    background-color: brown;
+    width: 20px;
+    height: 20px;
+    border: none;
+}
+#tree *:nth-child(1) {
+    width: 27%;
+    height: 10%;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: -60px;
+}
+#tree *:nth-child(2) {
+    width: 5%;
+    height: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 20px;
+    transform: rotate(2deg);
+}
+#tree *:nth-child(3) {
+    width: 3%;
+    height: 3%;
+    margin-left: 240px;
+    bottom: 20px;
+    border-radius: 50%;
+    transform: rotate(3deg);
+}
+#tree *:nth-child(4) {
+    width: 3%;
+    height: 3%;
+    margin-left: 210px;
+    bottom: 19px;
+    border-radius: 50%;
+    transform: rotate(3deg);
+}
+#tree *:nth-child(5) {
+    width: 1%;
+    height: 20%;
+    margin-left: 300px;
+    bottom: 140px;
+    transform: rotate(48deg);
+}
+#tree *:nth-child(6) {
+    width: 1%;
+    height: 20%;
+    margin-left: 190px;
+    bottom: 140px;
+    transform: rotate(-42deg);
+}
+#tree *:nth-child(7) {
+    padding: 0px;
+    width: 12px;
+    height: 20%;
+    margin-left: 140px;
+    bottom: 270px;
+    transform: rotate(-10deg);
+}
+#tree *:nth-child(8) {
+    padding: 0px;
+    width: 12px;
+    height: 20%;
+    margin-left: 110px;
+    bottom: 270px;
+    transform: rotate(-30deg);
+}
+#tree *:nth-child(9) {
+    padding: 0px;
+    width: 12px;
+    height: 20%;
+    margin-left: 410px;
+    bottom: 270px;
+    transform: rotate(26deg);
+}
+#tree *:nth-child(10) {
+    padding: 0px;
+    width: 12px;
+    height: 20%;
+    margin-left: 380px;
+    bottom: 270px;
+    transform: rotate(12deg);
+}
+#tree *:nth-child(11) {
+    padding: 0px;
+    width: 12px;
+    height: 20%;
+    margin-left: 300px;
+    bottom: 210px;
+    transform: rotate(13deg);
+}
+#tree *:nth-child(12) {
+    padding: 0px;
+    width: 12px;
+    height: 20%;
+    margin-left: 270px;
+    bottom: 210px;
+    transform: rotate(-16deg);
+}
+#tree *:nth-child(13) {
+    padding: 0px;
+    width: 12px;
+    height: 20%;
+    margin-left: 190px;
+    bottom: 240px;
+    transform: rotate(16deg);
+}
+#tree img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+#tree img:nth-child(14) {
+    bottom: 340px;
+    left: 40px;
+}
+#tree img:nth-child(15) {
+    bottom: 340px;
+    left: 95px;
+}
+#tree img:nth-child(16) {
+    bottom: 320px;
+    left: 170px;
+}
+#tree img:nth-child(17) {
+    bottom: 290px;
+    left: 220px;
+}
+#tree img:nth-child(18) {
+    bottom: 290px;
+    left: 280px;
+}
+#tree img:nth-child(19) {
+    bottom: 360px;
+    left: 350px;
+}
+#tree img:nth-child(20) {
+    bottom: 360px;
+    left: 410px;
+}
+.scew {
+    transform: rotate(20deg);
+}

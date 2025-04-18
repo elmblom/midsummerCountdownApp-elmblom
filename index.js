@@ -27,3 +27,24 @@ function countdownfunc() {
 setInterval(() => {
     countdownfunc();
 }, 1000);
+countdownfunc();
+
+const imagesArray = [];
+document.querySelectorAll("#tree img").forEach((value) => {
+    imagesArray.push(value);
+});
+
+let random = 0;
+
+function addclass() {
+    random = Math.floor(Math.random() * imagesArray.length);
+    imagesArray[random].classList.toggle("scew");
+    setTimeout(() => {
+        imagesArray[random].classList.toggle("scew");
+    }, 2500);
+}
+
+setInterval(() => {
+    addclass();
+}
+, 200);
