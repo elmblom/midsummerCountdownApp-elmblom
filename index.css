@@ -14,6 +14,11 @@ body {
     font-family: "Retro Leaves";
     src: url(./assets/fonts/retro-leaves/Retro\ Leaves.ttf) format("truetype");
 }
+#audio {
+    position: relative;
+    float: left;
+    top: 0px;
+}
 h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
